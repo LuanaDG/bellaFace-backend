@@ -1,6 +1,7 @@
 
 ## Projeto referente a atividade avaliativa: Bella Face Cosméticos!
 
+<<<<<<< HEAD
 - O projeto foi criado com o JAVA 11, utilizando SpringBoot e Maven para gerenciar as dependências.
 
 
@@ -10,6 +11,9 @@
 		
 - Os scripts para a criação do Banco de Dados e as respectivas tabelas/dados estão em: <br/>
 		`src/main/resources/bellaFace.sql`
+=======
+- O projeto foi criado com o JAVA 11, utilizando SpringBoot e Maven para gerenciamento de dependências.
+>>>>>>> 1f4b6f174bcecae26454249b2edb5aff9e881c1d
 
 		
 ##### Para executar o projeto: 
