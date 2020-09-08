@@ -1,11 +1,7 @@
 
 ## Projeto referente a atividade avaliativa: Bella Face Cosméticos!
 
-- O projeto foi criado com o JAVA 11; utilizando SpringBoot, Packing JAR e Maven. A IDE escolhida foi o Eclipse.
-
-
-- No arquivo `pom.xml` foram adicionadas as seguintes dependências:  JPA & MYSQL dependencies 
-
+- O projeto foi criado com o JAVA 11, utilizando SpringBoot e Maven para gerenciamento de dependências.
 
 
 - Os scripts para a criação do Banco de Dados e as respectivas tabelas estão em: <br/>
