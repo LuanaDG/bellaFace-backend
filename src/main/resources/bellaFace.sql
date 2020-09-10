@@ -65,8 +65,22 @@
    CONSTRAINT fk_product FOREIGN KEY (product_id) REFERENCES bellaface.product (id)
    );
    -- primary key (order_id, product_id) para que o produto não se repita e seja inserido apenas uma vez
+  
    
    
    
- 
+-- retorna dados da nota fiscal de cada venda
+
+SELECT product.id, order_product.order_id, product.name, product.description, order_product.quantity, bellaface.order.created_at, product.price, bellaface.order.total_order, bellaface.order.comments 
+FROM bellaface.order
+INNER JOIN order_product
+ON bellaface.order.id = order_product.order_id
+INNER JOIN product
+ON product.id = order_product.product_id
+WHERE bellaface.order.id = 47
+ORDER BY order_product.order_id ASC;
+
+
+
+
    

@@ -3,10 +3,14 @@ package com.bellaface.entities;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 
@@ -32,6 +36,10 @@ public class OrderProduct implements Serializable {
 	@Column(name = "total_price")
 	private BigDecimal totalPrice;
 	
+
+	
+	@Transient
+	private List<OrderProduct> listOrderProducts;
 
 	
 	public OrderProduct() {
@@ -98,5 +106,16 @@ public class OrderProduct implements Serializable {
 	public void setTotalPrice(BigDecimal totalPrice) {
 		this.totalPrice = totalPrice;
 	}
+
+
+	public List<OrderProduct> getListOrderProducts() {
+		return listOrderProducts;
+	}
+
+
+	public void setListOrderProducts(List<OrderProduct> listOrderProducts) {
+		this.listOrderProducts = listOrderProducts;
+	}
+	
 
 }
