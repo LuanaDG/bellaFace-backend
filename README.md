@@ -1,5 +1,5 @@
 
-## Projeto referente a atividade avaliativa: Bella Face Cosméticos!
+## Bella Face Cosméticos!
 
 
 - O projeto foi criado com o JAVA 11, utilizando SpringBoot e Maven para gerenciar as dependências.
